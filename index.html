@@ -1,0 +1,338 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Doug Roussin Portfolio</title>
+        <!-- Icons -->
+        <link
+            rel="stylesheet"
+            href="https://fonts.sandbox.google.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0"
+        />
+        <!--Fonts-->
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link
+            href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=Nunito:wght@200;400;700&display=swap"
+            rel="stylesheet"
+        />
+        <link
+            href="https://fonts.googleapis.com/css2?family=Source+Serif+Pro:wght@300;400;700&display=swap"
+            rel="stylesheet"
+        />
+        <!-- Bootstrap -->
+        <link
+            href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css"
+            rel="stylesheet"
+            integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3"
+            crossorigin="anonymous"
+        />
+        <link rel="stylesheet" href="style.css" />
+    </head>
+    <body>
+        <div class="container">
+            <section
+                id="intro"
+                class="d-flex flex-column justify-content-center align-items-center"
+            >
+                <div id="intro-title">
+                    <svg
+                        version="1.1"
+                        id="logo-svg"
+                        xmlns="http://www.w3.org/2000/svg"
+                        xmlns:xlink="http://www.w3.org/1999/xlink"
+                        x="0px"
+                        y="0px"
+                        viewBox="0 0 1000 1000"
+                        style="enable-background: new 0 0 1000 1000"
+                        xml:space="preserve"
+                    >
+                        <style type="text/css">
+                            .path {
+                                fill: #657a5e;
+                            }
+                        </style>
+                        <path
+                            class="path"
+                            d="M500,7.3C227.9,7.3,7.3,227.9,7.3,500S227.9,992.7,500,992.7S992.7,772.1,992.7,500S772.1,7.3,500,7.3z
+ M649.5,533.1l-32.4,218.6L471.3,516.9l-56.7,234.8L26,379.3l328,105.3l48.6-234.8l153.9,234.8l40.5-234.8l368.4,396.8L649.5,533.1z
+"
+                        />
+                    </svg>
+                    <h1>Doug Roussin</h1>
+                </div>
+                <h3>Artist, animator, potter, musician, coding enthusiast.</h3>
+                <code>const fun = playWith(Javascript);</code>
+                <a class="more" href="#about">
+                    <span class="material-symbols-outlined"> expand_more </span>
+                </a>
+            </section>
+            <section id="about">
+                <h1>About</h1>
+                <p class="section-copy">
+                    Doug Roussin has been a full-stack developer for
+                    negative-five months. He is currently in a boot camp to
+                    learn those very skills. If he enjoys programming half as
+                    much as he enjoys styling, it will be very difficult to
+                    choose a specialty.
+                </p>
+            </section>
+            <section id="contact">
+                <h1>Contact</h1>
+                <div class="row">
+                    <div class="col-md-6">
+                        <p class="section-copy">
+                            I'd love to hear from you! Send me an
+                            <a href="mailto:droussin356@gmail.com">email</a> or
+                            fill out the contact form.
+                        </p>
+                    </div>
+                    <div class="col-md-6">
+                        <form
+                            id="contact-form"
+                            action="https://mailthis.to/droussin356@gmail.com"
+                            method="POST"
+                        >
+                            <div class="row">
+                                <div class="col-6">
+                                    <input
+                                        type="text"
+                                        id="first-name"
+                                        name="first-name"
+                                        required
+                                        placeholder="First Name"
+                                    />
+                                </div>
+                                <div class="col-6">
+                                    <input
+                                        type="text"
+                                        id="last-name"
+                                        name="last-name"
+                                        required
+                                        placeholder="Last Name"
+                                    />
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-12">
+                                    <input
+                                        type="text"
+                                        id="email"
+                                        name="_replyto"
+                                        placeholder="Email"
+                                        required
+                                    />
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-12">
+                                    <textarea
+                                        name="message"
+                                        id="message"
+                                        cols="30"
+                                        rows="4"
+                                        placeholder="What's on your mind..."
+                                        required
+                                    ></textarea>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col">
+                                    <button
+                                        type="submit"
+                                        class="submit-button btn"
+                                    >
+                                        Send
+                                    </button>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </section>
+
+            <section id="portfolio">
+                <h1>Portfolio</h1>
+                <div class="row">
+                    <div class="col-sm-12 col-md-4">
+                        <a href="./project-weather.html">
+                            <div class="card">
+                                <img
+                                    src="./images/weather-app.png"
+                                    class="card-img-top"
+                                    alt="weather app screenshot"
+                                />
+                                <div class="card-body">
+                                    <h5 class="card-title">Weather App</h5>
+                                    <p class="card-text">Weather app layout.</p>
+                                    <ul>
+                                        <li>HTML</li>
+                                        <li>CSS</li>
+                                        <li>Bootstrap</li>
+                                    </ul>
+                                    <button
+                                        href="#"
+                                        target="_blank"
+                                        class="btn btn-primary"
+                                    >
+                                        Sunny Skies Ahead
+                                    </button>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+
+                    <div class="col-sm-12 col-md-4">
+                        <a href="./project-news-desktop.html">
+                            <div class="card">
+                                <img
+                                    src="./images/news-desktop-site.png"
+                                    class="card-img-top"
+                                    alt="news site"
+                                />
+                                <div class="card-body">
+                                    <h5 class="card-title">News Website</h5>
+                                    <p class="card-text">
+                                        Desktop layout for a news website home
+                                        page.
+                                    </p>
+                                    <ul>
+                                        <li>HTML</li>
+                                        <li>CSS</li>
+                                        <li>Bootstrap</li>
+                                    </ul>
+                                    <button href="#" class="btn btn-primary">
+                                        This Just In!
+                                    </button>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="col-sm-12 col-md-4">
+                        <a href="./project-news-mobile.html">
+                            <div class="card">
+                                <img
+                                    src="./images/news-mobile-site.png"
+                                    class="card-img-top"
+                                    alt="news site"
+                                />
+                                <div class="card-body">
+                                    <h5 class="card-title">
+                                        Mobile News Site Layout
+                                    </h5>
+                                    <p class="card-text">
+                                        News site mobile layout.
+                                    </p>
+                                    <ul>
+                                        <li>HTML</li>
+                                        <li>CSS</li>
+                                        <li>Bootstrap</li>
+                                    </ul>
+                                    <button
+                                        href="#"
+                                        target="_blank"
+                                        class="btn btn-primary"
+                                    >
+                                        Top Story!
+                                    </button>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-sm-12 col-md-4">
+                        <a href="./project-feedback.html">
+                            <div class="card">
+                                <img
+                                    src="./images/feedback-form.png"
+                                    class="card-img-top"
+                                    alt="feedback form"
+                                />
+                                <div class="card-body">
+                                    <h5 class="card-title">Feedback Form</h5>
+                                    <p class="card-text">
+                                        Feedback form layout, based on Google
+                                        forms.
+                                    </p>
+                                    <ul>
+                                        <li>HTML</li>
+                                        <li>CSS</li>
+                                        <li>Bootstrap</li>
+                                    </ul>
+                                    <button
+                                        href="#"
+                                        target="_blank"
+                                        class="btn btn-primary"
+                                    >
+                                        Your Opinion Matters
+                                    </button>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="col-sm-12 col-md-4">
+                        <a href="./project-flix.html">
+                            <div class="card">
+                                <img
+                                    src="./images/mega-flix-logo.png"
+                                    class="card-img-top"
+                                    alt="netflix clone site"
+                                />
+                                <div class="card-body">
+                                    <h5 class="card-title">MegaFlix</h5>
+                                    <p class="card-text">
+                                        Re-creation of a popular streaming site.
+                                    </p>
+                                    <ul>
+                                        <li>HTML</li>
+                                        <li>CSS</li>
+                                        <li>Bootstrap</li>
+                                    </ul>
+                                    <button
+                                        href="#"
+                                        target="_blank"
+                                        class="btn btn-primary"
+                                    >
+                                        Action!
+                                    </button>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="col-sm-12 col-md-4">
+                        <a href="./project-portfolio.html">
+                            <div class="card">
+                                <img
+                                    src="./images/portfolio-site.png"
+                                    class="card-img-top"
+                                    alt="doug roussin site screenshot"
+                                />
+                                <div class="card-body">
+                                    <h5 class="card-title">dougroussin.com</h5>
+                                    <p class="card-text">
+                                        A portfolio site for showing projects.
+                                    </p>
+                                    <ul>
+                                        <li>HTML</li>
+                                        <li>CSS</li>
+                                        <li>Bootstrap</li>
+                                    </ul>
+                                    <button
+                                        href=""
+                                        target="_blank"
+                                        class="btn btn-primary"
+                                    >
+                                        Very Meta!
+                                    </button>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+            </section>
+            <footer>© 2022 MegaloMedia / megaDoug</footer>
+        </div>
+    </body>
+</html>
