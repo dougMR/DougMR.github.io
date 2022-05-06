@@ -153,7 +153,7 @@ section#intro code {
 }
 section#intro .more {
     position: absolute;
-    bottom: 2vh;
+    bottom: 5vh;
     animation: fade-in ease-out 1s;
     opacity: 0;
     animation-fill-mode: forwards;
@@ -161,12 +161,14 @@ section#intro .more {
     transition: bottom 0.7s;
 }
 section#intro .more:hover {
-    bottom: 0.5vh;
+    bottom: 2vh;
 }
 section#intro .more span {
     font-size: 5rem;
     color: var(--accent);
     transition: color 1s;
+    line-height: 0.5;
+    vertical-align: bottom;
 }
 section#intro .more:hover span {
     color: var(--light-copy);
