@@ -84,7 +84,7 @@ span.badge {
     text-shadow: 0 0.05em 0.3em var(--light-title);
     padding: 0.5em 1em;
     margin-bottom: 0.3em;
-    box-shadow: inset 0 0 0.5em 0.2em var(--light-title);
+    box-shadow: inset 0 0 0.5em 0.2em var(--dark-button);
 }
 section,
 footer {
