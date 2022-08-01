@@ -384,15 +384,17 @@ section#project h2 {
     margin-bottom: 0;
 }
 section#project h3 {
+    line-height: 1;
     font-size: 2em;
     color: var(--light-title);
-    text-shadow:  0 -0.1em 0.2em var(--mid-light-bg);
+    text-shadow:   0 -0.1em 0.2em var(--mid-light-bg),-0.05em -.1em 0.4em var(--dark-bg);
     margin-top: 1em;
+    margin-bottom: 1em;
     border-top: 2px solid var(--mid-bg);
     /* border-left: 1px solid var(--mid-bg); */
     border-radius: 0.5em 0;
     padding-left: 0.25em;
-    padding-top: 0.2em;
+    padding-top: 0.5em;
     background: linear-gradient(
         to bottom right,
         rgba(255, 255, 255, 0.35),
@@ -410,11 +412,27 @@ section#project img {
 section#project li,
 section#project p {
     line-height: 1.3em;
-    margin-bottom: 0.5em;
+    margin-bottom: 0.8em;
     padding-left: 0.5em;
     color: var(--dark-copy);
     font-size: 1.1rem;
     /* font-weight: bold; */
+}
+
+/* section#project li::first-letter,
+section#project p::first-letter {
+    font-weight: bold;
+    font-size: 0.8em;
+    vertical-align: text-bottom;
+    color: var(--light-bg);
+    background-color: var(--dark-copy);
+    padding: 0.05em 0.3em 0;
+    margin-right: 0.2em;
+    border-radius: 0.2em;
+    border-bottom-right-radius: 0;
+} */
+section#project p {
+    margin-top: -1em;
 }
 /* section#project .tech-stack-title {
     margin-bottom: 0.75em;
