@@ -299,6 +299,7 @@ a:hover #logo-svg .path {
 }
 section#project {
     background-color: var(--light-bg);
+    background: linear-gradient(#e2f0f5 2rem, var(--light-bg) 16rem);
     border-radius: 0;
     color: white;
     position: relative;
@@ -381,7 +382,7 @@ section#project h2 {
     font-size: calc(3rem + 2vw);
     line-height: 1.1;
     color: var(--dark-bg);
-    margin-bottom: 0;
+    margin-bottom: 0.3em;
 }
 section#project h3 {
     line-height: 1;
@@ -390,7 +391,7 @@ section#project h3 {
     text-shadow:   0 -0.1em 0.2em var(--mid-light-bg),-0.05em -.1em 0.4em var(--dark-bg);
     margin-top: 1em;
     margin-bottom: 1em;
-    border-top: 2px solid var(--mid-bg);
+    border-top: 2px solid #aad8ed;
     /* border-left: 1px solid var(--mid-bg); */
     border-radius: 0.5em 0;
     padding-left: 0.25em;
