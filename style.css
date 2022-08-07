@@ -90,9 +90,14 @@ section,
 footer {
     /* border: 1px solid orange; */
     box-sizing: border-box;
-    padding: 3rem 2rem 5rem;
     box-shadow: 0 0 2rem var(--page-bg);
     border-radius: 1rem 1rem 0 0;
+}
+section {
+    padding: 1.5rem 2rem 5rem;
+}
+footer {
+    padding: 3rem 2rem 5rem;
 }
 
 section#about,
@@ -382,7 +387,7 @@ section#project h2 {
     font-size: calc(3rem + 2vw);
     line-height: 1.1;
     color: var(--dark-bg);
-    margin-bottom: 0.3em;
+    margin-bottom: 0.5rem;
 }
 section#project h3 {
     line-height: 1;
